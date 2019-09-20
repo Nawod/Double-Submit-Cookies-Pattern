@@ -1,0 +1,138 @@
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.bdy{
+  background-color: #6c6f6f;
+}
+* {
+  box-sizing: border-box;
+}
+.log{
+text-align: center;
+text-transform: uppercase;
+color: #f4f4f4;
+font-size: 50px;
+font-weight: bold;
+text-shadow: 0 1px 0 #acacac, 0 2px 0 #9f9d9d, 0 3px 0 #a4a1a1, 0 4px 0 #9d9a9a, 0 5px 0 #aea9a97a, 0 6px 1px rgba(115, 115, 115, 0.4), 0 0 5px rgba(79, 76, 76, 0.37), 0 1px 3px rgba(36, 33, 33, 0.47), 0 3px 5px rgba(113, 113, 113, 0.8), 0 5px 10px rgba(111, 110, 110, 0.74), 0 10px 10px rgba(0, 0, 0, 0.83), 0 20px 20px rgba(51, 50, 50, 0.85);
+margin-bottom: 40px;
+font-family: arial;
+}
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 50px;
+  background-color: #384142;
+  padding: 20px 100px 30px 100px;
+} 
+.containerx{
+  position: relative;
+  border-radius: 50px;
+  background-color: #384142;
+  padding: 20px 100px 30px 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+/* style inputs and link buttons */
+.inpt{
+  display: block;
+  width: 100%;
+  padding: 0.375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 1.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #08ad96;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #06bda3;
+}
+
+.rsltX{
+  color: #05894b;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.rslt{
+  color: #05ce55;
+}
+/* column layout */
+.col {
+  float: center;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+.colX{
+  float: center;
+  width: 85%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px; 
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
