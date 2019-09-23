@@ -26,14 +26,14 @@ else{
 		$(document).ready(function(){
 	
 		var cookie_value = "";
-    	var decodedCookie = decodeURIComponent(document.cookie);
+    	var decodedCookie = decodeURIComponent(document.cookie);//get csrf token from cookie
     	var ca = decodedCookie.split(';');
 		var csrf = decodedCookie.split(';')[2]
 		//
 		if(csrf.split('=')[0] = "csrfTokenCookie" ){
 		//
 		cookie_value = csrf.split('csrfTokenCookie=')[1];
-		document.getElementById("tokenIn_hidden_field").setAttribute('value', cookie_value) ;
+		document.getElementById("tokenIn_hidden_field").setAttribute('value', cookie_value) ;//add csrf token to hidden fields
 		}
 		});
 
@@ -47,7 +47,7 @@ else{
         <div id="login-row" class="row justify-content-center align-items-center">
             <div id="login-column" class="col-md-6">
                 <div class="box">
-                	<!--form to send a message-->
+                	<!--form to send a message and csrf token-->
                       <form class="form" action="result.php" method="post">
                             <div class="form-group">
                                 <label for="username" class="text-white"><h4>Send a Message</h4></label><br>
